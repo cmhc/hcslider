@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单幻灯片演示</title>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/hcslider.min.css">
+</head>
+<body>
+	<div class="container">
+
+
+
+		<div id="hcslider-container">
+			<ul id="hcslider">
+				<li>
+					<img src="img/1.jpg" alt="幻灯片1">
+				</li>
+
+				<li>
+					<img src="img/2.jpg" alt="幻灯片2">
+				</li>
+
+				<li>
+					<img src="img/3.jpg" alt="幻灯片3">
+				</li>
+
+				<li>
+					<img src="img/4.jpg" alt="幻灯片4">
+				</li>
+			</ul>
+		</div>
+
+
+
+	</div>
+</body>
+<script data-main="js/main.js" src="http://cdn.bootcss.com/require.js/2.1.20/require.min.js"></script>
+<script>
+require(['hcslider'],function(slider){
+	var slider = new slider.hcslider({
+		speed:300
+	});
+	slider.run();
+});
+
+</script>
+</html>
